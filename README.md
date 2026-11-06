@@ -22,3 +22,16 @@ model_pre.csv: Predicted results file.
 Initially, Exploratory Data Analysis is done to the data aiming over Germany. Comparison of ‘percentage’ generated from RE in Germany, Europe and World. Different sources of RE generation and its comparison is done for World and Germany. Other countries could also be selected for this comparison.  
 
 In the prediction part, the features ‘Total Installed capacity’ is computed from files mentioned above. The Data for the second feature ‘Investment in RE’ by German government’s is taken from https://de.statista.com. Initially only Linear Regression is applied and later feature engineering is done. The results are then evaluated.   
+
+## Data sources and access
+
+| Data | Source | Format |
+|---|---|---|
+| Renewable energy production, share of electricity, installed wind, solar PV and geothermal capacity (1965–2022) | Kaggle: https://www.kaggle.com/datasets/belayethossainds/renewable-energy-world-wide-19652022 | CSV files in `Data/` |
+| German government investment in renewable energy | https://de.statista.com | added by hand to the feature table |
+
+Derived files (`20model_Factors_Renewable.csv`, `model_pre.csv`) are written by the notebook. The data remain under the terms of their original providers.
+
+## Licence
+
+Code: MIT, see [LICENSE](LICENSE). Data: see *Data sources and access*; third-party data keep their own terms.
